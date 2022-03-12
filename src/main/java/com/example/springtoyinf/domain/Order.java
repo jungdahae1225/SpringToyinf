@@ -1,11 +1,10 @@
 package com.example.springtoyinf.domain;
-
 import lombok.Getter;
 import lombok.Setter;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "orders")
@@ -29,6 +28,7 @@ public class Order {
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status; //주문상태 [ORDER, CANCEL]
+
     //==연관관계 메서드==//
     public void setMember(Member member) {
         this.member = member;
