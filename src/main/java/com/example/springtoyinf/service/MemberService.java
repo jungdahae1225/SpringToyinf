@@ -2,7 +2,7 @@ package com.example.springtoyinf.service;
 
 import com.example.springtoyinf.domain.Member;
 import com.example.springtoyinf.repository.MemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -10,15 +10,15 @@ import java.util.List;
 
 @Service
 @Transactional(readOnly = true)
+@RequiredArgsConstructor //injection 최적화
 public class MemberService {
 
-    @Autowired
-    MemberRepository memberRepository;
+    private final MemberRepository memberRepository;
 
     /**
      * 회원가입
      */
-    @Transactional //변경
+    @Transactional //변경(수정 권한 부여)
     public Long join(Member member) {
         validateDuplicateMember(member); //중복 회원 검증
         memberRepository.save(member);
