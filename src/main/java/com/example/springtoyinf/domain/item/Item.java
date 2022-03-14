@@ -28,7 +28,8 @@ public abstract class Item {
     public void addStock(int quantity) {
         this.stockQuantity += quantity;
     }
-    public void removeStock(int quantity) {
+    
+    public void removeStock(int quantity) { //재고가 0 이하인데 재고를 빼는 상황이면 에러 내줘야 함
         int restStock = this.stockQuantity - quantity;
         if (restStock < 0) {
             throw new NotEnoughStockException("need more stock");
