@@ -1,6 +1,6 @@
 package com.example.springtoyinf.service;
 
-import com.example.springtoyinf.domain.Member;
+import com.example.springtoyinf.domain.member.Member;
 import com.example.springtoyinf.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

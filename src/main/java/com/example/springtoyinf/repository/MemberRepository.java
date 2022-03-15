@@ -1,6 +1,6 @@
 package com.example.springtoyinf.repository;
 
-import com.example.springtoyinf.domain.Member;
+import com.example.springtoyinf.domain.member.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;

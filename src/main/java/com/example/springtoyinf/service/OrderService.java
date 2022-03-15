@@ -1,7 +1,10 @@
 package com.example.springtoyinf.service;
 
 import com.example.springtoyinf.domain.*;
+import com.example.springtoyinf.domain.delivery.Delivery;
+import com.example.springtoyinf.domain.delivery.DeliveryStatus;
 import com.example.springtoyinf.domain.item.Item;
+import com.example.springtoyinf.domain.member.Member;
 import com.example.springtoyinf.repository.ItemRepository;
 import com.example.springtoyinf.repository.MemberRepository;
 import com.example.springtoyinf.repository.OrderRepository;

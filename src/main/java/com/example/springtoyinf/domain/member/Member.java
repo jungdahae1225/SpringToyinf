@@ -1,4 +1,6 @@
-package com.example.springtoyinf.domain;
+package com.example.springtoyinf.domain.member;
+import com.example.springtoyinf.domain.Order;
+import com.example.springtoyinf.domain.member.Address;
 import lombok.Getter;
 import lombok.Setter;
 

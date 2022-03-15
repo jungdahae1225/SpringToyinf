@@ -1,5 +1,7 @@
 package com.example.springtoyinf.domain;
-import lombok.AccessLevel;
+import com.example.springtoyinf.domain.delivery.Delivery;
+import com.example.springtoyinf.domain.delivery.DeliveryStatus;
+import com.example.springtoyinf.domain.member.Member;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

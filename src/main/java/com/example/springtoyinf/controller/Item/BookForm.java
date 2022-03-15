@@ -1,4 +1,4 @@
-package com.example.springtoyinf.controller;
+package com.example.springtoyinf.controller.Item;
 
 import lombok.Getter;
 import lombok.Setter;

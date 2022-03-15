@@ -1,7 +1,7 @@
-package com.example.springtoyinf.controller;
+package com.example.springtoyinf.controller.Member;
 
-import com.example.springtoyinf.domain.Address;
-import com.example.springtoyinf.domain.Member;
+import com.example.springtoyinf.domain.member.Address;
+import com.example.springtoyinf.domain.member.Member;
 import com.example.springtoyinf.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -23,7 +23,7 @@ public class MemberController {
     }
 
     @PostMapping(value = "/members/new")
-    public String create(@Valid MemberForm form, BindingResult result) {
+    public String create(@Valid MemberForm form, BindingResult result) { //DTO를 사용하여 엔티티 값 setting
         if (result.hasErrors()) {
             return "members/createMemberForm";
         }
@@ -32,7 +32,7 @@ public class MemberController {
         Member member = new Member();
         member.setName(form.getName());
         member.setAddress(address);
-        memberService.join(member);
+        memberService.join(member); //DB에 저장
         return "redirect:/";
     }
 }

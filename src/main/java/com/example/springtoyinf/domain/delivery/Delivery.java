@@ -1,5 +1,7 @@
-package com.example.springtoyinf.domain;
+package com.example.springtoyinf.domain.delivery;
 
+import com.example.springtoyinf.domain.member.Address;
+import com.example.springtoyinf.domain.Order;
 import lombok.Getter;
 import lombok.Setter;
 import javax.persistence.*;
